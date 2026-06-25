@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khowarizmi AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">
+            <h2><i class="fa-solid fa-code"></i> Control Panel</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active" onclick="switchTab('dashboard')"><i class="fa-solid fa-gauge"></i> Home</li>
+            <li onclick="switchTab('kiosk')"><i class="fa-solid fa-robot"></i> Khowarizmi AI Assistant</li>
+            <!-- <li onclick="switchTab('projects')"><i class="fa-solid fa-lightbulb"></i> Exhibition Pipeline</li> -->
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        
+        <header class="top-bar">
+            <h1>Khowarizmi (The Algorithm) AI Assistant </h1><img src="logo.png" alt="Khowarizmi logo">
+            <div class="status-badge"><span class="dot"></span> Live & Launchable</div>
+        </header>
+
+        <section id="dashboard" class="tab-content active-tab">
+            <div class="welcome-card">
+                <h2>Welcome to the 2026 Coding Exhibition Tech Stack by Khowarizmi ( the algorithm)</h2>
+                <p>Zero Naira budget, infinite possibilities. Explore the active  and theoretical frameworks below.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-rocket"></i>
+                    <p>Free to Use</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <p>Fast and Reliable</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-wallet"></i>
+                    <p>Easy to Access</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kiosk" class="tab-content">
+            <div class="kiosk-container">
+                <div class="kiosk-header">
+                    <h2><i class="fa-solid fa-microphone"></i>Khowarizmi AI Assistant</h2>
+                    <p>Click the microphone or type to interact with Khowarizmi intelligence system.</p>
+                </div>
+                
+                <div class="chat-box" id="chatBox">
+                    <div class="message ai-msg">Hello! I am Khowarizmi AI School Assistant. Ask me about your timetable, WAEC topics, or school rules and other things.</div>
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="userInput" placeholder="Ask Anything...">
+                    <button class="btn voice-btn" id="voiceBtn" onclick="startVoice()"><i class="fa-solid fa-microphone"></i></button>
+                    <button class="btn send-btn" onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="projects" class="tab-content">
+            <h2>System Architecture Matrix</h2>
+            <div class="project-table-container">
+                <table class="project-table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Target Environment</th>
+                            <th>Core Tech Stack (₦0 Tools)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Live Emotion-to-Music</td>
+                            <td>Web App</td>
+                            <td>HTML5 Webcam API + Face-api.js</td>
+                            <td><span class="badge yellow">In Pipeline</span></td>
+                        </tr>
+                        <tr>
+                            <td>Offline Nigerian Lang Translator</td>
+                            <td>Mobile/Web</td>
+                            <td>IndexedDB + Local JSON Dictionary</td>
+                            <td><span class="badge yellow">In Pipeline</span></td>
+                        </tr>
+                        <tr>
+                            <td>3D Solar System Classroom</td>
+                            <td>Web Canvas</td>
+                            <td>Three.js (WebGL Library)</td>
+                            <td><span class="badge yellow">In Pipeline</span></td>
+                        </tr>
+                        <tr>
+                            <td>Virtual Chemistry Lab</td>
+                            <td>Web browser</td>
+                            <td>HTML5 Canvas + JavaScript Physics Engine</td>
+                            <td><span class="badge yellow">In Pipeline</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section> -->
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
